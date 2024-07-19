@@ -271,8 +271,8 @@ header .navbar ul li a:hover {
     padding: 2rem 0;
 }
 .portfolio .box-container .box {
-    height: 20rem;
-    width: 26rem;
+    height: 19rem;
+    width: 40rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
