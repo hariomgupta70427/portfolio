@@ -278,7 +278,7 @@ header .navbar ul li a:hover {
 .portfolio .box-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: initial;
     flex-wrap: wrap;
     padding: 2rem 0;
 }
@@ -293,7 +293,8 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    border-radius: 35px;
 }
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
@@ -540,6 +541,10 @@ header .navbar ul li a:hover {
     color: var(--color);
 }
 
+.footer-social {
+    margin-bottom: 1rem;
+}
+
 .footer-copyright {
     margin-top: -3.8rem;
     font-size: 2rem;
@@ -555,6 +560,23 @@ header .navbar ul li a:hover {
 
     .footer-links {
         margin-bottom: 1rem;
+    }
+
+    .footer-copyright {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        left: 0; /* Resetting left position */
+        text-align: center; /* Centering the text */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        font-size: 1.4rem;
+    }
+
+    .footer-copyright {
+        font-size: 1.4rem;
     }
 }
 
