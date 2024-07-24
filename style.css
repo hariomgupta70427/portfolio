@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
-    --color: crimson;
+    --color: #dd4949;
 }
 * {
     font-family: 'Nunito', sans-serif;
@@ -56,6 +56,18 @@ section {
 }
 .btn:hover {
     background: var(--color);
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
 }
 .heading {
     text-align: center;
@@ -271,8 +283,8 @@ header .navbar ul li a:hover {
     padding: 2rem 0;
 }
 .portfolio .box-container .box {
-    height: 19rem;
-    width: 40rem;
+    height: 30rem;
+    width: 63rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
@@ -286,6 +298,41 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
 }
+ 
+.portfolio-btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 6em;
+    margin-left: 6em;
+    margin-right: 7em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1rem;
+  }
+  
+  .portfolio-btn:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }
 
 /* Portfolio Section Ends */
 
@@ -300,7 +347,7 @@ header .navbar ul li a:hover {
 .contact .row .content {
     flex: 1 1 30rem;
     padding: 4rem;
-    padding-bottom: 0;
+    padding-bottom: 86px;
 }
 .contact .row form {
     flex: 1 1 45rem;
@@ -345,6 +392,171 @@ header .navbar ul li a:hover {
 }
 
 /* Contact Section Ends */
+.follow-text{
+    text-align: center;
+    color: #197213;
+    justify-content: center;
+    size: 50px;
+    left: 0rem;
+    bottom: -40px;
+    position: relative;
+    font-size: 35px;
+   display: inline;
+}
+.social-icons{
+    display: inline-block;
+    position: relative;
+    bottom: -50px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px; /* Increased size of the box */
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 5px; /* Increased margin between icons */
+    transition: transform 0.3s; /* Added transition for animation */
+    border-radius: 15%;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .fa:hover {
+    transform: translateY(-10px); /* Move the icon up */
+  }
+  
+ 
+  .fa::before {
+    display: inline-block;
+    transform: scale(3); /* Adjust this value to increase the icon size */
+  }
+  
+  .fa::after {
+    content: attr(data-icon);
+    font-family: FontAwesome;
+    font-size: 30px; /* Match the font-size of the icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .fa-whatsapp{
+    background: rgb(25, 148, 25);
+    color: white;}
+    
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-telegram {
+    background: rgb(12, 140, 179);
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #df4242;
+    color: white;
+  }
+  
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .fa-github{
+    background: black;
+    color: white;
+  }
+
+/* Footer Section Style */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color);
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--color);
+}
+
+.footer-copyright {
+    margin-top: -3.8rem;
+    font-size: 2rem;
+    position: relative;
+    left: 30rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 1rem;
+    }
+}
 
 /* Media Queries */
 
