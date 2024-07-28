@@ -136,14 +136,14 @@ header .navbar ul li a:hover {
     background: var(--color);
 }
 #menu {
-    position: fixed;
+    position: absolute;
     top: 2rem;
     right: 2rem;
-    background: #333;
-    color: #fff;
+    background: transparent;
+    color: #710a0a;
     cursor: pointer;
-    font-size: 2.5rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    padding: -1rem 0.5rem;
     z-index: 1000;
     display: none;
 }
